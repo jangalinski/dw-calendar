@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.holisticon.dropwizard.calendar</groupId>
+    <groupId>de.holisticon.dw.calendar</groupId>
     <artifactId>dw-calendar</artifactId>
     <version>0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -17,7 +17,9 @@
     </parent>
 
     <properties>
+        <mainClass>de.holisticon.dw.calendar.DwCalendarApplication</mainClass>
         <dropwizard.version>0.8.0-SNAPSHOT</dropwizard.version>
+        <ical4j.version>2.0-alpha1</ical4j.version>
     </properties>
 
     <dependencyManagement>
@@ -30,6 +32,19 @@
             <artifactId>dropwizard-core</artifactId>
             <version>${dropwizard.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.mnode.ical4j</groupId>
+            <artifactId>ical4j</artifactId>
+            <version>${ical4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.holisticon.dependencies</groupId>
+            <artifactId>junit-mockito</artifactId>
+            <version>1.0</version>
+            <type>pom</type>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -39,10 +54,6 @@
             </plugin>
             <plugin>
                 <artifactId>maven-shade-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

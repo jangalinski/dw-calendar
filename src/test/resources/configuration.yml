@@ -1,0 +1,9 @@
+name: dwCalendar
+
+server:
+  type: simple
+  applicationContextPath: /calendar
+  adminContextPath: /admin
+  connector:
+    type: http
+    port: 8080
