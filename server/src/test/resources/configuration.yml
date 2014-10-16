@@ -1,0 +1,8 @@
+name: dwCalendar
+server:
+  applicationConnectors:
+  - type: http
+    port: 3456
+  adminConnectors:
+  - type: http
+    port: 3457
