@@ -1,31 +1,27 @@
 package de.holisticon.dw.calendar.ical
 
+import biweekly.ICalendar
+import biweekly.component.VEvent
 import com.google.common.base.Supplier
-import net.fortuna.ical4j.model.Calendar
-import net.fortuna.ical4j.model.component.VEvent
-import net.fortuna.ical4j.model.property.{CalScale, ProdId, Version}
 import org.joda.time.DateTime
 
 
-class FluentCalendar extends Supplier[Calendar] {
+class FluentCalendar extends Supplier[ICalendar] {
 
-    private val cal = new Calendar
+    private val cal = new ICalendar
     private val properties = cal.getProperties
     private val components = cal.getComponents
 
-    properties.add(new ProdId("-//dw-calendar//iCal4j 1.0//EN"))
-    properties.add(Version.VERSION_2_0)
-    properties.add(CalScale.GREGORIAN)
 
-    override def get(): Calendar = cal
+    override def get(): ICalendar = cal
 
     def event(date:DateTime, summary:String) = {
-        components.add(new VEvent(new net.fortuna.ical4j.model.Date(date.toDate), summary))
+        cal.addEvent(new VEvent())
         this
     }
 
     def event(event:VEvent) = {
-        components.add(event)
+        cal.addEvent(event)
         this
     }
 }

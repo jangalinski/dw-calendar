@@ -9,5 +9,4 @@ public interface CalendarResource extends LoadCalendar {
     String ROOT_PATH = "/";
     String TEXT_CALENDAR = "text/calendar";
 
-
 }

@@ -1,9 +1,8 @@
 package de.holisticon.dw.calendar.ical;
 
+import biweekly.ICalendar;
 import com.google.common.collect.Lists;
 import com.google.common.io.Resources;
-import net.fortuna.ical4j.model.Calendar;
-import net.fortuna.ical4j.model.component.VEvent;
 import org.joda.time.DateTime;
 import org.junit.Rule;
 import org.junit.Test;
@@ -12,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URL;
+import java.util.Calendar;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -25,18 +25,18 @@ public class CalendarsTest {
 
     @Test
     public void creates_url_from_webcal() throws Exception {
-        assertThat(Calendars.toUrl("webcal://domain.tld/abc.ics").toString()).isEqualTo("http://domain.tld/abc.ics");
+        assertThat(Calendars.url("webcal://domain.tld/abc.ics").toString()).isEqualTo("http://domain.tld/abc.ics");
     }
 
     @Test
     public void fails_to_create_url_for_null() {
         thrown.expect(NullPointerException.class);
-        Calendars.toUrl(null);
+        Calendars.url(null);
     }
 
     @Test
     public void loads_calendar_from_resource() throws Exception {
-        Calendar c = loadExampleIcal();
+        ICalendar c = loadExampleIcal();
 
         assertThat(c).isNotNull();
         assertThat(c.getComponents()).isNotEmpty();
@@ -50,12 +50,12 @@ public class CalendarsTest {
 
 
 
-        Calendar c = FluentCalendar.calendar(date,summary).get();
+        ICalendar c = FluentCalendar.calendar(date,summary).get();
 
         logger.info(c.toString());
     }
 
-    public static Calendar loadExampleIcal() {
+    public static ICalendar loadExampleIcal() {
         return Calendars.load(EXAMPLE_ICAL);
     }
 }

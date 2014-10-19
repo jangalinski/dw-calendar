@@ -37,11 +37,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.mnode.ical4j</groupId>
-            <artifactId>ical4j</artifactId>
-            <version>${ical4j.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>io.dropwizard</groupId>

@@ -1,7 +1,7 @@
 package de.holisticon.dw.calendar.function;
 
-import net.fortuna.ical4j.model.Calendar;
-import net.fortuna.ical4j.model.component.CalendarComponent;
+import biweekly.ICalendar;
+import biweekly.component.VEvent;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,9 +16,9 @@ public class ParseRemoteIcsTest {
 
     @Test
     public void _() throws MalformedURLException {
-        final Calendar calendar = function.apply(new URL("http://ifeiertage.de/hh-.ics"));
+        final ICalendar calendar = function.apply(new URL("http://ifeiertage.de/hh-.ics"));
 
-        for (CalendarComponent c : calendar.getComponents()) {
+        for (VEvent c : calendar.getEvents()) {
             logger.info("{}", c);
         }
     }

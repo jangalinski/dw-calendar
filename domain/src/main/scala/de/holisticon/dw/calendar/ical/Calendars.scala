@@ -2,28 +2,23 @@ package de.holisticon.dw.calendar.ical
 
 import java.net.URL
 
-import net.fortuna.ical4j.data.CalendarBuilder
-import net.fortuna.ical4j.model.Calendar
-import net.fortuna.ical4j.model.component.VEvent
-import net.fortuna.ical4j.model.property.{Version, ProdId, CalScale}
+import biweekly.component.VEvent
+import biweekly.{Biweekly, ICalendar}
 import org.joda.time.DateTime
 
 object Calendars {
 
-    def toUrl(url: String): URL = new URL(url.replace("webcal://", "http://"))
+    def url(url: String) = new URL(url.replace("webcal://", "http://"))
 
-    def load(url: URL): Calendar = new CalendarBuilder().build(url.openStream())
+    def load(url: URL): ICalendar = Biweekly.parse(url.openStream()).first()
 
     def calendar(events:VEvent*) = {
-        val calendar = new Calendar();
-        calendar.getProperties().add(new ProdId("-//dw-calendar//iCal4j 1.0//EN"));
-        calendar.getProperties().add(Version.VERSION_2_0);
-        calendar.getProperties().add(CalScale.GREGORIAN);
+        val calendar = new ICalendar();
 
-        events.foreach(calendar.getComponents().add(_))
+        events.foreach(calendar.addEvent(_))
     }
 
     def vEvent(date:DateTime, title:String) = {
-        new VEvent(new net.fortuna.ical4j.model.Date(date.toDate), title)
+        new VEvent()
     }
 }

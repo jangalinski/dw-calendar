@@ -18,13 +18,10 @@ public class LoadCalendarResourceITest {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-
-
     @Test
     public void call_load_calendar() throws InterruptedException {
         final Client client = ClientBuilder.newBuilder().build();
         logger.error(client.target(DW.getEndpoint() + "foo/jan").request().get().readEntity(String.class));
-
     }
 
 }
