@@ -1,7 +1,6 @@
 package de.holisticon.dw.calendar.ical;
 
 import biweekly.ICalendar;
-import com.google.common.collect.Lists;
 import com.google.common.io.Resources;
 import org.joda.time.DateTime;
 import org.junit.Rule;
@@ -11,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URL;
-import java.util.Calendar;
 
 import static org.assertj.core.api.Assertions.*;
 
