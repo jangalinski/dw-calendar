@@ -28,11 +28,6 @@ public class H2MemoryRule<T> extends ExternalResource implements Supplier<T> {
     }
 
     @Override
-    protected void after() {
-        // nothing here!
-    }
-
-    @Override
     public T get() {
         return dbi.onDemand(daoType);
     }

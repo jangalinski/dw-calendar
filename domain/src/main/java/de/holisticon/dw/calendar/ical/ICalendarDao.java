@@ -18,7 +18,6 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Date;
 
 import static java.lang.annotation.ElementType.PARAMETER;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
@@ -31,6 +30,7 @@ public interface ICalendarDao extends Closeable {
     final String UID = "uid";
     final String SUMMARY = "summary";
     final String START = "start";
+    final String END = "end";
 
     /**
      * Stores a VEvent in the db.
@@ -61,6 +61,7 @@ public interface ICalendarDao extends Closeable {
             event.setSummary(r.getString(SUMMARY));
             event.setUid(r.getString(UID));
             event.setDateStart(r.getTimestamp(START));
+            event.setDateEnd(r.getTimestamp(END));
 
             return event;
         }
@@ -87,6 +88,7 @@ public interface ICalendarDao extends Closeable {
                         q.bind(UID, event.getUid().getValue());
                         q.bind(SUMMARY, event.getSummary().getValue());
                         q.bind(START, event.getDateStart().getValue());
+                        q.bind(END, event.getDateEnd().getValue());
                     }
                 };
             }
