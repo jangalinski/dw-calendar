@@ -11,7 +11,7 @@ import static de.holisticon.dw.calendar.api.CalendarResource.ROOT_PATH;
 import static de.holisticon.dw.calendar.api.CalendarResource.TEXT_CALENDAR;
 
 @Path(ROOT_PATH)
-public interface LoadCalendar {
+public interface LoadCalendarResource {
 
     @POST
     @Path("/foo/{name}")

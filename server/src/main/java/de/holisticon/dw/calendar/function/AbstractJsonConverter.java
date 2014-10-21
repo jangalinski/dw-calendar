@@ -8,9 +8,6 @@ import io.dropwizard.jackson.Jackson;
 import java.io.IOException;
 import java.io.Serializable;
 
-/**
- * Created by jangalinski on 03.10.14.
- */
 public class AbstractJsonConverter<T extends Serializable> extends Converter<T, String> {
 
     private final ObjectMapper mapper = Jackson.newObjectMapper();

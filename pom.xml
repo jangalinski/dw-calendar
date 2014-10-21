@@ -17,13 +17,14 @@
     </parent>
 
     <modules>
-      <module>server</module>
+        <module>api</module>
         <module>domain</module>
+        <module>rest</module>
+        <module>server</module>
     </modules>
 
     <properties>
         <dropwizard.version>0.8.0-SNAPSHOT</dropwizard.version>
-        <ical4j.version>2.0-alpha1</ical4j.version>
     </properties>
 
     <dependencyManagement>
