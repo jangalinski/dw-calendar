@@ -4,7 +4,6 @@ import java.net.URL
 
 import biweekly.component.VEvent
 import biweekly.{Biweekly, ICalendar}
-import org.joda.time.DateTime
 
 object Calendars {
 
@@ -16,9 +15,5 @@ object Calendars {
         val calendar = new ICalendar();
 
         events.foreach(calendar.addEvent(_))
-    }
-
-    def vEvent(date:DateTime, title:String) = {
-        new VEvent()
     }
 }
