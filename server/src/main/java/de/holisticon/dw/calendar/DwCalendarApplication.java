@@ -2,7 +2,7 @@ package de.holisticon.dw.calendar;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import de.holisticon.dw.calendar.health.DummyHealthCheck;
-import de.holisticon.dw.calendar.resource.CalendarResourceBean;
+import de.holisticon.dw.calendar.rest.CalendarResourceBean;
 import de.holisticon.dw.calendar.view.SimpleView;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;

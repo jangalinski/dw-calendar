@@ -4,6 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <artifactId>dw-calendar-rest</artifactId>
+
     <parent>
         <groupId>de.holisticon.dw.calendar</groupId>
         <artifactId>dw-calendar-root</artifactId>
@@ -11,6 +13,11 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>dw-calendar-rest</artifactId>
+    <dependencies>
+        <dependency>
+            <artifactId>dw-calendar-api</artifactId>
+            <groupId>${project.groupId}</groupId>
+        </dependency>
+    </dependencies>
 
 </project>

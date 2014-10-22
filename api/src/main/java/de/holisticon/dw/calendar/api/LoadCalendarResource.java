@@ -14,7 +14,7 @@ import static de.holisticon.dw.calendar.api.CalendarResource.TEXT_CALENDAR;
 public interface LoadCalendarResource {
 
     @POST
-    @Path("/load/{name}")
+    @Path("/load/")
     @Produces(TEXT_CALENDAR)
-    public Response load(@PathParam("name") String name, RemoteCalendar remoteCalendar);
+    public Response load(RemoteCalendar remoteCalendar);
 }

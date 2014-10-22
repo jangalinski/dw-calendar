@@ -18,9 +18,12 @@
     </properties>
 
     <dependencies>
-
         <dependency>
-            <artifactId>dw-calendar-ical</artifactId>
+            <artifactId>dw-calendar-rest</artifactId>
+            <groupId>${project.groupId}</groupId>
+        </dependency>
+        <dependency>
+            <artifactId>dw-calendar-domain</artifactId>
             <groupId>${project.groupId}</groupId>
         </dependency>
 

@@ -35,7 +35,6 @@ public interface ICalendarDao extends Closeable {
     final String END = "end";
     final String CREATED = "created";
 
-
     /**
      * Stores a VEvent in the db.
      *
@@ -101,8 +100,6 @@ public interface ICalendarDao extends Closeable {
                         final Date createValue = created != null ? created.getValue() : null;
 
                         q.bind(CREATED, createValue != null ? createValue : new Date());
-
-
                     }
                 };
             }

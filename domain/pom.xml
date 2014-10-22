@@ -8,7 +8,7 @@
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>dw-calendar-ical</artifactId>
+    <artifactId>dw-calendar-domain</artifactId>
 
     <dependencies>
         <dependency>
@@ -33,13 +33,6 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
             <version>3.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.scalatra.scalate</groupId>
-            <artifactId>scalate-test_2.11</artifactId>
-            <version>1.7.0</version>
-            <scope>test</scope>
         </dependency>
 
     </dependencies>
