@@ -19,11 +19,7 @@
 
     <dependencies>
         <dependency>
-            <artifactId>dw-calendar-rest</artifactId>
-            <groupId>${project.groupId}</groupId>
-        </dependency>
-        <dependency>
-            <artifactId>dw-calendar-domain</artifactId>
+            <artifactId>dw-calendar-core</artifactId>
             <groupId>${project.groupId}</groupId>
         </dependency>
 
@@ -37,7 +33,6 @@
             <artifactId>dropwizard-views-mustache</artifactId>
             <version>${dropwizard.version}</version>
         </dependency>
-
 
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>

@@ -2,7 +2,8 @@ package de.holisticon.dw.calendar;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import de.holisticon.dw.calendar.health.DummyHealthCheck;
-import de.holisticon.dw.calendar.rest.CalendarResourceBean;
+import de.holisticon.dw.calendar.ical.ICalendarDao;
+import de.holisticon.dw.calendar.ical.rest.CalendarResourceBean;
 import de.holisticon.dw.calendar.view.SimpleView;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
@@ -18,6 +19,8 @@ public class DwCalendarApplication extends Application<DwCalendarApplication.Con
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    private final ICalendarDao dao = null;
+
     @Override
     public void initialize(final Bootstrap<Configuration> bootstrap) {
         bootstrap.addBundle(new ViewBundle());
@@ -26,7 +29,7 @@ public class DwCalendarApplication extends Application<DwCalendarApplication.Con
 
     @Override
     public void run(final Configuration configuration, final Environment environment) throws Exception {
-        environment.jersey().register(new CalendarResourceBean());
+        environment.jersey().register(new CalendarResourceBean(null));
         environment.jersey().register(new SimpleView());
 
         environment.healthChecks().register("dummy", new DummyHealthCheck());

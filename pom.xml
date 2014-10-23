@@ -18,8 +18,7 @@
 
     <modules>
         <module>api</module>
-        <module>domain</module>
-        <module>rest</module>
+        <module>core</module>
         <module>server</module>
     </modules>
 
@@ -35,12 +34,7 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <artifactId>dw-calendar-rest</artifactId>
-                <groupId>${project.groupId}</groupId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <artifactId>dw-calendar-domain</artifactId>
+                <artifactId>dw-calendar-core</artifactId>
                 <groupId>${project.groupId}</groupId>
                 <version>${project.version}</version>
             </dependency>
