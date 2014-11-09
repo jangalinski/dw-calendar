@@ -1,0 +1,645 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Last.fm Limited Event Feeds//NONSGML//EN
+X-WR-CALNAME:Last.fm Events - For janhoo
+X-WR-CALDESC:janhoo is attending these Events - supplied by http://www.Last.fm
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3908942
+URL;VALUE=URI:http://www.last.fm/event/3908942+Simon+Phillips+at+Fabrik+on+24+October+2014
+DTSTAMP;TZID=Europe/Berlin:20141024T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141024T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141024T235900
+SUMMARY:Simon Phillips at Fabrik
+DESCRIPTION:Simon Phillips
+ \n\nhttp://www.last.fm/event/3908942+Simon+Phillips+at+Fabrik+on+24+October+2014
+LOCATION:Fabrik\, Hamburg\, Germany
+GEO:9.92912;53.55655
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3950007
+URL;VALUE=URI:http://www.last.fm/event/3950007+FISH+-++%22The+Moveable+Feast+Tour%22
+DTSTAMP;TZID=Europe/Berlin:20141024T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141024T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141024T235900
+SUMMARY:FISH -  "The Moveable Feast Tour"
+DESCRIPTION:Fish
+ \n\nhttp://www.last.fm/event/3950007+FISH+-++%22The+Moveable+Feast+Tour%22
+LOCATION:The Rock Café St. Pauli\, Hamburg\, Germany
+GEO:9.968126;53.545702
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3949765
+URL;VALUE=URI:http://www.last.fm/event/3949765+Hamburg+Stoner+Inferno+II
+DTSTAMP;TZID=Europe/Berlin:20141025T210000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141025T210000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141025T235900
+SUMMARY:Hamburg Stoner Inferno II
+DESCRIPTION:Spidergawd\, Grandloom\, Iguana\, zqkmgdz
+ \n\nhttp://www.last.fm/event/3949765+Hamburg+Stoner+Inferno+II
+LOCATION:Bambi galore\, Hamburg\, Germany
+GEO:10.109923;53.542172
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3878281
+URL;VALUE=URI:http://www.last.fm/event/3878281+Swans+at+Kampnagel+on+27+October+2014
+DTSTAMP;TZID=Europe/Berlin:20141027T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141027T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141027T235900
+SUMMARY:Swans + Pharmakon at Kampnagel
+DESCRIPTION:Swans\, Pharmakon
+ \n\nhttp://www.last.fm/event/3878281+Swans+at+Kampnagel+on+27+October+2014
+LOCATION:Kampnagel\, Hamburg\, Germany
+GEO:10.02277;53.58406
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3849407
+URL;VALUE=URI:http://www.last.fm/event/3849407+Satellites+over+Europe+Tour+2014
+DTSTAMP;TZID=Europe/Berlin:20141029T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141029T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141029T235900
+SUMMARY:Satellites over Europe Tour 2014
+DESCRIPTION:Anathema\, Mother's Cake
+ \n\nhttp://www.last.fm/event/3849407+Satellites+over+Europe+Tour+2014
+LOCATION:Grünspan\, Hamburg\, Germany
+GEO:9.95806;53.55183
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3967720
+URL;VALUE=URI:http://www.last.fm/event/3967720+FATES+WARNING
+DTSTAMP;TZID=Europe/Berlin:20141101T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141101T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141101T235900
+SUMMARY:FATES WARNING
+DESCRIPTION:Fates Warning\, HeadLess
+ \n\nhttp://www.last.fm/event/3967720+FATES+WARNING
+LOCATION:The Rock Café St. Pauli\, Hamburg\, Germany
+GEO:9.968126;53.545702
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3943009
+URL;VALUE=URI:http://www.last.fm/event/3943009+Horisont+at+MarX+on+3+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141103T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141103T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141103T235900
+SUMMARY:Horisont + Spiders + more at MarX
+DESCRIPTION:Horisont\, Spiders\, Vidunder
+ \n\nhttp://www.last.fm/event/3943009+Horisont+at+MarX+on+3+November+2014
+LOCATION:MarX\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3933298
+URL;VALUE=URI:http://www.last.fm/event/3933298+The+Quireboys+at+The+Rock+Caf%C3%A9+St.+Pauli+on+4+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141104T210000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141104T210000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141104T235900
+SUMMARY:The Quireboys + Sons of Morpheus at The Rock Café St. Pauli
+DESCRIPTION:The Quireboys\, Sons of Morpheus
+ \n\nhttp://www.last.fm/event/3933298+The+Quireboys+at+The+Rock+Caf%C3%A9+St.+Pauli+on+4+November+2014
+LOCATION:The Rock Café St. Pauli\, Hamburg\, Germany
+GEO:9.968126;53.545702
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3942731
+URL;VALUE=URI:http://www.last.fm/event/3942731+Resurrection+Tour
+DTSTAMP;TZID=Europe/Berlin:20141105T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141105T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141105T235900
+SUMMARY:Resurrection Tour
+DESCRIPTION:Trouble
+ \n\nhttp://www.last.fm/event/3942731+Resurrection+Tour
+LOCATION:Hafenklang\, Hamburg\, Germany
+GEO:9.94785;53.544377
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3884490
+URL;VALUE=URI:http://www.last.fm/event/3884490+Insomnium+at+Gr%C3%BCnspan+on+9+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141109T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141109T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141109T235900
+SUMMARY:Insomnium + Stam1na + more at Grünspan
+DESCRIPTION:Insomnium\, Stam1na\, Fleshgod Apocalypse
+ \n\nhttp://www.last.fm/event/3884490+Insomnium+at+Gr%C3%BCnspan+on+9+November+2014
+LOCATION:Grünspan\, Hamburg\, Germany
+GEO:9.95806;53.55183
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3873468
+URL;VALUE=URI:http://www.last.fm/event/3873468+Killfest+Tour+2014
+DTSTAMP;TZID=Europe/Berlin:20141112T190000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141112T190000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141112T235900
+SUMMARY:Killfest Tour 2014
+DESCRIPTION:Overkill\, Prong\, Enforcer\, Darkology
+ \n\nhttp://www.last.fm/event/3873468+Killfest+Tour+2014
+LOCATION:Markthalle\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3865801
+URL;VALUE=URI:http://www.last.fm/event/3865801+Saint+Vitus+at+Knust+on+12+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141112T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141112T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141112T235900
+SUMMARY:Saint Vitus + Orange Goblin at Knust
+DESCRIPTION:Saint Vitus\, Orange Goblin
+ \n\nhttp://www.last.fm/event/3865801+Saint+Vitus+at+Knust+on+12+November+2014
+LOCATION:Knust\, Hamburg\, Germany
+GEO:9.967648;53.558296
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3829617
+URL;VALUE=URI:http://www.last.fm/event/3829617+Warriors+Of+The+Road+World+Tour
+DTSTAMP;TZID=Europe/Berlin:20141113T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141113T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141113T235900
+SUMMARY:Warriors Of The Road World Tour
+DESCRIPTION:Saxon\, Skid Row
+ \n\nhttp://www.last.fm/event/3829617+Warriors+Of+The+Road+World+Tour
+LOCATION:Markthalle\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3917789
+URL;VALUE=URI:http://www.last.fm/event/3917789+Mot%C3%B6rhead+at+Alsterdorfer+Sporthalle+on+14+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141114T190000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141114T190000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141114T235900
+SUMMARY:Motörhead at Alsterdorfer Sporthalle
+DESCRIPTION:Motörhead
+ \n\nhttp://www.last.fm/event/3917789+Mot%C3%B6rhead+at+Alsterdorfer+Sporthalle+on+14+November+2014
+LOCATION:Alsterdorfer Sporthalle\, Hamburg\, Germany
+GEO:10.003548;53.601905
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3942887
+URL;VALUE=URI:http://www.last.fm/event/3942887+Doomriders+at+Hafenklang+on+20+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141120T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141120T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141120T235900
+SUMMARY:Doomriders + Coliseum at Hafenklang
+DESCRIPTION:Doomriders\, Coliseum
+ \n\nhttp://www.last.fm/event/3942887+Doomriders+at+Hafenklang+on+20+November+2014
+LOCATION:Hafenklang\, Hamburg\, Germany
+GEO:9.94785;53.544377
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3856096
+URL;VALUE=URI:http://www.last.fm/event/3856096+Primordial+at+Knust+on+20+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141120T203000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141120T203000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141120T235900
+SUMMARY:Primordial + Portrait + more at Knust
+DESCRIPTION:Primordial\, Portrait\, Bölzer
+ \n\nhttp://www.last.fm/event/3856096+Primordial+at+Knust+on+20+November+2014
+LOCATION:Knust\, Hamburg\, Germany
+GEO:9.967648;53.558296
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3888424
+URL;VALUE=URI:http://www.last.fm/event/3888424+Further+North+Tour+2014
+DTSTAMP;TZID=Europe/Berlin:20141121T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141121T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141121T235900
+SUMMARY:Further North Tour 2014
+DESCRIPTION:Ahab\, Watered
+ \n\nhttp://www.last.fm/event/3888424+Further+North+Tour+2014
+LOCATION:Bambi galore\, Hamburg\, Germany
+GEO:10.109923;53.542172
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3935769
+URL;VALUE=URI:http://www.last.fm/event/3935769+Audrey+Horne+at+Headcrash+on+27+November+2014
+DTSTAMP;TZID=Europe/Berlin:20141127T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141127T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141127T235900
+SUMMARY:Audrey Horne + Pet the Preacher + more at Headcrash
+DESCRIPTION:Audrey Horne\, Pet the Preacher\, '77
+ \n\nhttp://www.last.fm/event/3935769+Audrey+Horne+at+Headcrash+on+27+November+2014
+LOCATION:Headcrash\, Hamburg\, Germany
+GEO:9.96126;53.550847
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3938310
+URL;VALUE=URI:http://www.last.fm/event/3938310+Machine+Head+at+Grosse+Freiheit+36+on+3+December+2014
+DTSTAMP;TZID=Europe/Berlin:20141203T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141203T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141203T235900
+SUMMARY:Machine Head + Darkest Hour + more at Grosse Freiheit 36
+DESCRIPTION:Machine Head\, Darkest Hour\, Devil You Know
+ \n\nhttp://www.last.fm/event/3938310+Machine+Head+at+Grosse+Freiheit+36+on+3+December+2014
+LOCATION:Grosse Freiheit 36\, Hamburg\, Germany
+GEO:9.957922;53.551225
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3855313
+URL;VALUE=URI:http://www.last.fm/event/3855313+Kreator+at+Docks+on+8+December+2014
+DTSTAMP;TZID=Europe/Berlin:20141208T190000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141208T190000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141208T235900
+SUMMARY:Kreator + Arch Enemy + more at Docks
+DESCRIPTION:Kreator\, Arch Enemy\, Vader\, Sodom
+ \n\nhttp://www.last.fm/event/3855313+Kreator+at+Docks+on+8+December+2014
+LOCATION:Docks\, Hamburg\, Germany
+GEO:9.964591;53.549368
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3839141
+URL;VALUE=URI:http://www.last.fm/event/3839141+At+War+With+Reality+2014
+DTSTAMP;TZID=Europe/Berlin:20141211T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141211T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141211T235900
+SUMMARY:At War With Reality 2014
+DESCRIPTION:At the Gates\, Triptykon\, Morbus Chron
+ \n\nhttp://www.last.fm/event/3839141+At+War+With+Reality+2014
+LOCATION:Markthalle\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3903742
+URL;VALUE=URI:http://www.last.fm/event/3903742+Covenant+-+Europe+Tour+2014
+DTSTAMP;TZID=Europe/Berlin:20141214T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141214T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141214T235900
+SUMMARY:Covenant - Europe Tour 2014
+DESCRIPTION:Morbid Angel
+ \n\nhttp://www.last.fm/event/3903742+Covenant+-+Europe+Tour+2014
+LOCATION:klubsen\, Hamburg\, Germany
+GEO:10.022419;53.549606
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3969303
+URL;VALUE=URI:http://www.last.fm/event/3969303+BULLET+BELT+ANTHEMS+mit:+ATTIC+-+NOCTURAL+WITCH
+DTSTAMP;TZID=Europe/Berlin:20141227T200000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20141227T200000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20141227T235900
+SUMMARY:BULLET BELT ANTHEMS mit: ATTIC & NOCTURAL WITCH
+DESCRIPTION:Attic\, Nocturnal Witch
+ \n\nhttp://www.last.fm/event/3969303+BULLET+BELT+ANTHEMS+mit:+ATTIC+-+NOCTURAL+WITCH
+LOCATION:The Rock Café St. Pauli\, Hamburg\, Germany
+GEO:9.968126;53.545702
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3933884
+URL;VALUE=URI:http://www.last.fm/event/3933884+Persistence+Tour+2015
+DTSTAMP;TZID=Europe/Berlin:20150116T180000
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150116T180000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150116T235900
+SUMMARY:Persistence Tour 2015
+DESCRIPTION:Sick of It All\, Ignite\, Walls of Jericho\, All For Nothing\, Ryker's\, Turnstile\, Broken Teeth
+ \n\nhttp://www.last.fm/event/3933884+Persistence+Tour+2015
+LOCATION:Grosse Freiheit 36\, Hamburg\, Germany
+GEO:9.957922;53.551225
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3959747
+URL;VALUE=URI:http://www.last.fm/event/3959747+Obituary+at+Tivoli+on+17+January+2015
+DTSTAMP;TZID=Europe/Berlin:20150117T165900
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150117T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150117T235900
+SUMMARY:Obituary + Dust Bolt + more at Tivoli
+DESCRIPTION:Obituary\, Dust Bolt\, Posthum\, M-Pire of Evil\, Rotting Repugnancy
+ \n\nhttp://www.last.fm/event/3959747+Obituary+at+Tivoli+on+17+January+2015
+LOCATION:Tivoli\, Bremen\, Germany
+GEO:8.8847;53.0558
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3821913
+URL;VALUE=URI:http://www.last.fm/event/3821913+Hell+Over+Hammaburg+Warmup+Show
+DTSTAMP;TZID=Europe/Berlin:20150306T144500
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150306T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150306T235900
+SUMMARY:Hell Over Hammaburg Warmup Show
+DESCRIPTION:tba.
+ \n\nhttp://www.last.fm/event/3821913+Hell+Over+Hammaburg+Warmup+Show
+LOCATION:The Rock Café St. Pauli\, Hamburg\, Germany
+GEO:9.968126;53.545702
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3843736
+URL;VALUE=URI:http://www.last.fm/festival/3843736+Hell+Over+Hammaburg+III
+DTSTAMP;TZID=Europe/Berlin:20150307T154700
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150307T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150307T235900
+SUMMARY:Hell Over Hammaburg III
+DESCRIPTION:Necros Christos\, Solstice\, Midnight\, Dødsengel\, Ambush\, Cult of Fire\, Night\, High Spirits\, The Tower\, Caronte\, Robert Pehrsson's Humbucker\, Triumphant
+ \n\nhttp://www.last.fm/festival/3843736+Hell+Over+Hammaburg+III
+LOCATION:Markthalle\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3958961
+URL;VALUE=URI:http://www.last.fm/event/3958961+Devin+Townsend+Project+at+Gr%C3%BCnspan+on+17+March+2015
+DTSTAMP;TZID=Europe/Berlin:20150317T152100
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150317T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150317T235900
+SUMMARY:Devin Townsend Project + Shining + more at Grünspan
+DESCRIPTION:Devin Townsend Project\, Shining\, Periphery
+ \n\nhttp://www.last.fm/event/3958961+Devin+Townsend+Project+at+Gr%C3%BCnspan+on+17+March+2015
+LOCATION:Grünspan\, Hamburg\, Germany
+GEO:9.95806;53.55183
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3968816
+URL;VALUE=URI:http://www.last.fm/event/3968816+Death:+DTA+at+Markthalle+on+18+March+2015
+DTSTAMP;TZID=Europe/Berlin:20150318T175600
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150318T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150318T235900
+SUMMARY:Death: DTA + Death + more at Markthalle
+DESCRIPTION:Death: DTA\, Death\, Massacre\, Abysmal Dawn\, Loudblast
+ \n\nhttp://www.last.fm/event/3968816+Death:+DTA+at+Markthalle+on+18+March+2015
+LOCATION:Markthalle\, Hamburg\, Germany
+GEO:10.005961;53.549322
+END:VEVENT
+
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+BEGIN:STANDARD
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0100
+DTSTART;TZID=Europe/Berlin:20141018T163200
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:LFMEVENT-3924260
+URL;VALUE=URI:http://www.last.fm/festival/3924260+Headbangers+Open+Air+2015
+DTSTAMP;TZID=Europe/Berlin:20150723T003900
+DTSTART;TZID=Europe/Berlin;TZID=Europe/Berlin:20150723T000000
+DTEND;TZID=Europe/Berlin;TZID=Europe/Berlin:20150725T235900
+SUMMARY:Headbangers Open Air 2015
+DESCRIPTION:Satan\, Hirax\, Warrior\, Blitzkrieg\, Aftermath\, Ruthless\, Hexx\, Wrath\, Death Dealer\, Spellcaster
+ \n\nhttp://www.last.fm/festival/3924260+Headbangers+Open+Air+2015
+LOCATION:Festivalgelände\, Brande-Hörnerkirchen\, Germany
+GEO:9.705182;53.850731
+END:VEVENT
+
+END:VCALENDAR

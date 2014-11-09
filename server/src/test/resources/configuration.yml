@@ -1,0 +1,14 @@
+name: dwCalendar
+server:
+  applicationConnectors:
+  - type: http
+    port: 3456
+  adminConnectors:
+  - type: http
+    port: 3457
+
+database:
+  driverClass: org.h2.Driver
+  user: sa
+  password: sa
+  url: jdbc:h2:./target/icalendar
