@@ -2,7 +2,6 @@ package de.holisticon.dw.calendar.ical;
 
 import biweekly.component.VEvent;
 import com.google.common.base.Function;
-import com.google.common.base.Predicate;
 import com.google.common.collect.FluentIterable;
 import de.holisticon.dw.calendar.ical.test.H2MemoryRule;
 import org.junit.Rule;
@@ -29,8 +28,8 @@ public class ICalendarDaoTest {
 
         dao.insert(event);
 
-        final VEvent read = dao.findNameById(event.getUid().getValue());
-
+        final VEvent read = dao.find(event.getUid());
+        assertThat(read).isNotNull();
         assertThat(read.getSummary().getValue()).isEqualTo(event.getSummary().getValue());
     }
 
@@ -49,7 +48,30 @@ public class ICalendarDaoTest {
             public String apply(VEvent input) {
                 return input.getSummary().getValue();
             }
-        })).contains("a","b");
+        })).contains("a", "b");
+    }
+
+    @Test
+    public void updates_an_existing_event() {
+        VEvent event = vEvent("foo", new Date());
+        dao.insert(event);
+        event = dao.find(event.getUid());
+        assertThat(event).isNotNull();
+        assertThat(event.getSummary().getValue()).isEqualTo("foo");
+
+        event.setSummary("bar");
+        dao.update(event);
+        assertThat(dao.find(event.getUid()).getSummary().getValue()).isEqualTo("bar");
+    }
+
+    @Test
+    public void updates_or_inserts_if_not_existing() {
+        VEvent event = vEvent("foo", new Date());
+        event = dao.createOrUpdate(event);
+        assertThat(event.getSummary().getValue()).isEqualTo("foo");
+        event.setSummary("bar");
+        event = dao.createOrUpdate(event);
+        assertThat(event.getSummary().getValue()).isEqualTo("bar");
     }
 
     private VEvent vEvent(String summary, Date start) {

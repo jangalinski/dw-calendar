@@ -36,5 +36,4 @@ public class H2MemoryRule<T> extends ExternalResource implements Supplier<T> {
     public T get() {
         return dao;
     }
-
 }

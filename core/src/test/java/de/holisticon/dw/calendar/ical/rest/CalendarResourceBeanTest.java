@@ -20,6 +20,9 @@ import java.util.List;
 
 import static io.dropwizard.testing.junit.ResourceTestRule.builder;
 import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 public class CalendarResourceBeanTest {
 
@@ -37,11 +40,11 @@ public class CalendarResourceBeanTest {
     @Before
     public void setUp() {
         target = resources.client().target(CalendarResource.PATH.ROOT);
-        responsePost = postRemoteCalendar();
     }
 
     @Test
     public void loads_calendar_from_url_and_saves_events_in_db() {
+        responsePost = postRemoteCalendar();
         assertThat(responsePost.getStatus()).isEqualTo(204);
 
         final List<VEvent> events = h2.get().findAll();
@@ -52,13 +55,24 @@ public class CalendarResourceBeanTest {
 
     @Test
     public void creates_new_calendar_from_saved_events() {
+        responsePost = postRemoteCalendar();
         final Response response = target.path(CalendarResource.PATH.GET_CALENDAR).request(CalendarResource.TYPE.ICAL).get();
 
         assertThat(response.getStatus()).isEqualTo(200);
 
-        final ICalendar calendar= Biweekly.parse(response.readEntity(String.class)).first();
+        final ICalendar calendar = Biweekly.parse(response.readEntity(String.class)).first();
 
         assertThat(calendar.getEvents()).hasSize(3);
+    }
+
+    @Test
+    public void updates_events_when_posting_the_same_calendar_twice() {
+        postRemoteCalendar();
+        postRemoteCalendar();
+
+        // all events from ics file have been created.
+        final List<VEvent> events = h2.get().findAll();
+        assertThat(events).hasSize(3);
     }
 
     private Response postRemoteCalendar() {

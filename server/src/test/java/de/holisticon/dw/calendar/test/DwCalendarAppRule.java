@@ -11,8 +11,10 @@ public class DwCalendarAppRule extends DropwizardAppRule<DwCalendarApplication.C
         super(DwCalendarApplication.class, ResourceHelpers.resourceFilePath("configuration.yml"));
     }
 
+
+
     public String getEndpoint() {
-        return String.format("http://localhost:%s/rest/", getLocalPort());
+        return String.format("http://localhost:%s/", getLocalPort());
     }
 
 

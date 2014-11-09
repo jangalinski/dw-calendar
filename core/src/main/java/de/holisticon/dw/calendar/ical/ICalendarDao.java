@@ -2,6 +2,7 @@ package de.holisticon.dw.calendar.ical;
 
 import biweekly.component.VEvent;
 import biweekly.property.Created;
+import biweekly.property.Uid;
 import org.skife.jdbi.v2.SQLStatement;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.sqlobject.Bind;
@@ -13,6 +14,8 @@ import org.skife.jdbi.v2.sqlobject.SqlUpdate;
 import org.skife.jdbi.v2.sqlobject.customizers.Mapper;
 import org.skife.jdbi.v2.tweak.ResultSetMapper;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.io.Closeable;
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Retention;
@@ -28,13 +31,13 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 /**
  * Dao taking care of persistence.
  */
-public interface ICalendarDao extends Closeable {
+public abstract class ICalendarDao implements Closeable {
 
-    final String UID = "uid";
-    final String SUMMARY = "summary";
-    final String START = "start";
-    final String END = "end";
-    final String CREATED = "created";
+    public static final String UID = "uid";
+    public static final String SUMMARY = "summary";
+    public static final String START = "start";
+    public static final String END = "end";
+    public static final String CREATED = "created";
 
     /**
      * Stores a VEvent in the db.
@@ -42,30 +45,52 @@ public interface ICalendarDao extends Closeable {
      * @param event the event to save
      */
     @SqlUpdate("insert into EVENT (uid,summary,start,end,created) values(:uid,:summary,:start,:end, :created)")
-    void insert(@BindVEvent VEvent event);
+    public abstract void insert(@BindVEvent VEvent event);
+
+    @SqlUpdate("update EVENT set summary=:summary,start=:start,end=:end,created=:created where uid = :uid")
+    public abstract void update(@BindVEvent VEvent event);
 
 
     /**
      * Reads a VEvent from db.
      *
      * @param uid the uid of the event
-     * @return the found event.
+     * @return the found event (or null).
      */
+    @Nullable
     @SqlQuery("select * from EVENT where uid = :uid")
     @Mapper(VEventMapper.class)
-    VEvent findNameById(@Bind(UID) String uid);
+    public abstract VEvent find(@Bind(UID) String uid);
+
+    public VEvent find(final Uid uid) {
+        return find(uid.getValue());
+    }
+
+    public boolean exists(final VEvent event) {
+        return find(event.getUid()) != null;
+    }
 
     /**
-     * @return all found events
+     * @return all found events (or empty list)
      */
+    @Nonnull
     @SqlQuery("select * from EVENT")
     @Mapper(VEventMapper.class)
-    List<VEvent> findAll();
+    public abstract List<VEvent> findAll();
+
+    public VEvent createOrUpdate(final VEvent event) {
+        if (!exists(event)) {
+            insert(event);
+        } else {
+            update(event);
+        }
+        return find(event.getUid());
+    }
 
     /**
      * Mapping to read events from result.
      */
-    class VEventMapper implements ResultSetMapper<VEvent> {
+    public static class VEventMapper implements ResultSetMapper<VEvent> {
 
         @Override
         public VEvent map(int index, ResultSet r, StatementContext ctx) throws SQLException {
@@ -86,7 +111,7 @@ public interface ICalendarDao extends Closeable {
     @BindingAnnotation(BindVEvent.VEventBinderFactory.class)
     @Retention(RUNTIME)
     @Target({PARAMETER})
-    @interface BindVEvent {
+    public static @interface BindVEvent {
 
         /**
          * Bind event to insert statement.
